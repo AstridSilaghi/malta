@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malta Itinerary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5E6D3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100%;
+            background-image: url("https://assets.vogue.com/photos/599365b2f0b0e21484d3436e/master/w_1920,c_limit/00-lede-a-travel-guide-to-malta.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+        }
+        header h1 {
+            position: relative;
+            z-index: 2;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+            z-index: 1;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .day {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 6px solid #B36D5D;
+            position: relative;
+            overflow: hidden;
+            transition: height 0.3s ease;
+            min-height: 90px; /* Initial minimum height */
+        }
+        .hover-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hover-content img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .day:hover {
+            height: 320px; /* Adjust to fit content on hover */
+        }
+        .day:hover .hover-content {
+            display: flex;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your 7-Day Itinerary for Malta</h1>
+</header>
+
+<main>
+    <div class="day">
+        <h2>Day 0 - Arrival</h2>
+        <p>Welcome to Malta! Settle in and explore your surroundings.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=Malta+Arrival" alt="Malta Arrival">
+            <div>Tip: Check out local eateries for authentic Maltese cuisine.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 1 - Madina & Rabat</h2>
+        <p>Discover the historic charm of Mdina and Rabat.</p>
+        <div class="hover-content">
+            <img src="https://assets.vogue.com/photos/599365b2f0b0e21484d3436e/master/w_1920,c_limit/00-lede-a-travel-guide-to-malta.jpg" alt="Mdina and Rabat">
+            <div>Tip: Visit St. Paul's Catacombs for a touch of history.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 2 - Visit the Surroundings & Relax</h2>
+        <p>Explore nearby attractions and enjoy a relaxed day.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=Surroundings+and+Relax" alt="Surroundings and Relax">
+            <div>Tip: Take a leisurely walk along the Dingli Cliffs.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 3 - Valetta & Three Cities</h2>
+        <p>Immerse yourself in the rich history of Valletta and the Three Cities.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=Valletta+and+Three+Cities" alt="Valletta and Three Cities">
+            <div>Tip: Don't miss the panoramic views from Upper Barrakka Gardens.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 4 - Relax, baby</h2>
+        <p>Take a day to unwind and indulge in leisure activities.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=Relax" alt="Relax">
+            <div>Tip: Consider a spa day for complete relaxation.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 5 - Gozo</h2>
+        <p>Take a trip to the beautiful island of Gozo.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=Gozo" alt="Gozo">
+            <div>Tip: Visit the Citadel and enjoy local Gozitan delicacies.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 6 - Beach day (Blue Grotto/Boat Cruise)</h2>
+        <p>Enjoy a day at the beach and explore by boat.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=Blue+Grotto+Boat+Cruise" alt="Blue Grotto Boat Cruise">
+            <div>Tip: Capture photos of the stunning Blue Grotto.</div>
+        </div>
+    </div>
+    <div class="day">
+        <h2>Day 7 - See you next time, Malta!</h2>
+        <p>Bid farewell to Malta and cherish your memories.</p>
+        <div class="hover-content">
+            <img src="https://via.placeholder.com/300x200.png?text=See+You+Next+Time" alt="See You Next Time">
+            <div>Tip: Plan your return trip to explore more.</div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
