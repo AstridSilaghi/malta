@@ -52,9 +52,15 @@
             transition: height 0.3s ease;
             min-height: 90px; /* Initial minimum height */
         }
+		.day img {    
+			width: 100%; /* Make the image take the full width of the container */    
+			height: auto; /* Maintain aspect ratio */    
+			border-radius: 5px; /* Optional: match the border radius of the container */    
+			display: block; /* Remove bottom space under the image */
+		}
         .hover-content {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
+            background-color: #F9F6EE;
+            color: #7e2100;
             padding: 10px;
             position: absolute;
             top: 0;
@@ -64,7 +70,7 @@
             display: none;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: left;
             flex-direction: column;
         }
         .hover-content img {
@@ -83,6 +89,11 @@
         h1, h2 {
             margin: 0;
         }
+		a.nav-link:hover
+		{
+		   color: #fb3f00;
+		   text-decoration: none;
+		}
     </style>
 </head>
 <body>
@@ -95,22 +106,29 @@
     <div class="day">
         <h2>Day 0 - Arrival</h2>
         <p>Welcome to Malta!</p>
-		<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.barcelo.com%2Fguia-turismo%2Fen%2Fmalta%2Fmalta%2Fthings-to-do%2Fmdina%2F&psig=AOvVaw2Hozis-iKFSRAAzfLv3nQG&ust=1745518807834000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiZurXi7owDFQAAAAAdAAAAABAJ" alt="Welcome to Malta">
-        <div class="hover-content">
+		<!--<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.barcelo.com%2Fguia-turismo%2Fen%2Fmalta%2Fmalta%2Fthings-to-do%2Fmdina%2F&psig=AOvVaw2Hozis-iKFSRAAzfLv3nQG&ust=1745518807834000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiZurXi7owDFQAAAAAdAAAAABAJ" alt="Welcome to Malta">
+        -->
+		<div class="hover-content">
             <div>
-				<a href="https://www.booking.com/hotel/mt/a-luxury-villa-by-the-sea.html?aid=964694&label=hotel_pictures-N1d0xs%401737726362&sid=fc15f86934509e4de6fa69f12dc63821&checkin=2025-02-06&checkout=2025-02-12&dist=0&from_sn=android&group_adults=2&group_children=0&keep_landing=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&type=total&">Check Accomodation</a>    
-				<a href="https://www.google.com/maps/dir/Malta+International+Airport,+Malta/St+Paul's+Bay,+Malta/@35.9029196,14.4129465,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x130e5a8552b04a6d:0xd6a6624d89d784a!2m2!1d14.4863361!2d35.8517424!1m5!1m1!1s0x130e4e698d84e505:0x600c991898dd0537!2m2!1d14.4109413!2d35.9483408!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"> Google Map from Airport</a>
+				<div>
+					<a href="https://www.booking.com/hotel/mt/a-luxury-villa-by-the-sea.html?aid=964694&label=hotel_pictures-N1d0xs%401737726362&sid=fc15f86934509e4de6fa69f12dc63821&checkin=2025-02-06&checkout=2025-02-12&dist=0&from_sn=android&group_adults=2&group_children=0&keep_landing=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&type=total&" class="nav-link">Check Accomodation</a>    
+				</div>
+				<div>
+					<a href="https://www.google.com/maps/dir/Malta+International+Airport,+Malta/St+Paul's+Bay,+Malta/@35.9029196,14.4129465,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x130e5a8552b04a6d:0xd6a6624d89d784a!2m2!1d14.4863361!2d35.8517424!1m5!1m1!1s0x130e4e698d84e505:0x600c991898dd0537!2m2!1d14.4109413!2d35.9483408!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="nav-link"> Google Map from Airport</a>
+				</div>
 			</div>
         </div>
     </div>
     <div class="day">
         <h2>Day 1 - Madina & Rabat</h2>
 		<img src="https://assets.vogue.com/photos/599365b2f0b0e21484d3436e/master/w_1920,c_limit/00-lede-a-travel-guide-to-malta.jpg" alt="Mdina and Rabat"> 
-        <p></p>
+
+		<p></p>
         <div class="hover-content">
-            <img src="https://assets.vogue.com/photos/599365b2f0b0e21484d3436e/master/w_1920,c_limit/00-lede-a-travel-guide-to-malta.jpg" alt="Mdina and Rabat">
-            <div>
-				<h1>Attractions in Madina</h1>    
+            <!--<img src="https://assets.vogue.com/photos/599365b2f0b0e21484d3436e/master/w_1920,c_limit/00-lede-a-travel-guide-to-malta.jpg" alt="Mdina and Rabat">
+            -->
+			<div>
+				<h2>Attractions in Madina</h2>    
 				<ul>        
 					<li>Mdina Gate</li>        
 					<li>St Paul's Cathedral</li>        
@@ -122,8 +140,9 @@
 				<ul>        
 					<li>St Paul's Catacombs</li>    
 				</ul>
-				<a href="https://www.google.com/maps/dir/St+Paul's+Bay,+Malta/Mdina,+Malta/@35.9204917,14.3849235,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x130e4e698d84e505:0x600c991898dd0537!2m2!1d14.4109413!2d35.9483408!1m5!1m1!1s0x130e519568ce9a2f:0x99705c199db5bc13!2m2!1d14.4031146!2d35.8863691!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D">Open Google Maps</a>
-				
+				<ul>
+					<a href="https://www.google.com/maps/dir/St+Paul's+Bay,+Malta/Mdina,+Malta/@35.9204917,14.3849235,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x130e4e698d84e505:0x600c991898dd0537!2m2!1d14.4109413!2d35.9483408!1m5!1m1!1s0x130e519568ce9a2f:0x99705c199db5bc13!2m2!1d14.4031146!2d35.8863691!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="nav-link">Open Google Maps</a>
+				</ul>
 			</div>
         </div>
     </div>
